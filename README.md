@@ -14,9 +14,9 @@ This application will allow the user to use the editor and be able to install it
         
 User will open terminal and enter: npm start
 
-## Usage
+## Heroku
 
-
+https://text-editor-app-j.herokuapp.com/
 
 
 ## How to contribute
