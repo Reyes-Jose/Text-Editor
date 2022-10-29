@@ -13,25 +13,25 @@ const initdb = async () =>
   });
 
 //Accepts data and then inputs into database
-export const putDb = async (id, content) => {
-  console.log('PUT to the database')
+export const putDb = async (content) => {
+  
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const request = store.add({ id: id, content: content});
+  const request = store.put({ id: 1, content: content});
   const result = await request;
   console.log('data saved to the database', result);
 }
 
 //Will get all data from the database
 export const getDb = async () => {
-  console.log('GET all from the database');
+  
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
   const request = store.getAll();
   const result = await request;
-  console.log('result.value', result);
+  
   return result;
 }
 
