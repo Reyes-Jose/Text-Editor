@@ -8,13 +8,13 @@ window.addEventListener('beforeinstallprompt', (event) => {
     butInstall.style.visibility = 'visable';
     textHeader.textContent = 'Click the button to install!';
     
+    
     //implements an eventlistener on click
     butInstall.addEventListener('click', async () => {
         event.prompt();
         butInstall.setAttribute('disabled', true);
         butInstall.textContent = 'Installed!';
     });
-
 });
 
 
