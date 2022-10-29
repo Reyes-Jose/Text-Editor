@@ -15,7 +15,7 @@ If the user wishes to try the code themselves.
 User will open terminal and enter: npm start
 
 ## Heroku
-If you'd like to checkout the app, heres the link!
+If you'd like to check out the app, heres the link!
 https://text-editor-app-j.herokuapp.com/
 
 
